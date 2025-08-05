@@ -1,0 +1,102 @@
+
+\section{Test Theorems}
+
+\begin{theorem}
+    This should be theorem \thesection.1.
+\end{theorem}
+\begin{theorem}
+    This should be theorem \thesection.2.
+\end{theorem}
+
+\subsection{Subsection 1}
+
+\begin{theorem}
+    This should be theorem \thesubsection.1.
+\end{theorem}
+\begin{theorem}
+    This should be theorem \thesubsection.2.
+\end{theorem}
+
+\subsubsection{A Subsubsection}
+
+\begin{theorem}
+    This should be theorem \thesubsubsection.1.
+\end{theorem}
+\begin{theorem}
+    This should be theorem \thesubsubsection.2.
+\end{theorem}
+
+\subsection{Subsection 2}
+
+\begin{theorem}
+    This should be theorem \thesubsection.1.
+\end{theorem}
+\begin{lemma}
+    This should be lemma \thesubsection.2.
+\end{lemma}
+\begin{theorem}
+    This should be theorem \thesubsection.3.
+\end{theorem}
+
+
+\section{Test Theorem Proofs}
+
+\begin{proof}
+    This should be a proof with a proof mark.
+\end{proof}
+
+\begin{proof}
+    This should be a display equation with a proof mark.
+    \[ f(x) = x^2 \]
+\end{proof}
+
+
+\section{Test Theorem Equations}
+
+\subsection{Unlabeled Equations}
+
+This should be an unlabeled equation.
+\[ f(x) = x^2 \]
+
+\begin{theorem}
+    This should be an unlabeled equation.
+    \[ f(x) = x^2 \]
+\end{theorem}
+
+\begin{proof}
+    This should be an unlabeled equation with a proof mark.
+    \[ f(x) = x^2 \]
+\end{proof}
+
+\subsection{Labeled Equations}
+
+This should be equation \thesubsection.1.
+\[ f(x) = x^2 \eqn{eq:test_in_subsection_labeled_not_referenced} \]
+
+\begin{example}
+    This should be equation \thesubsection.2.
+    \[ f(x) = x^2 \eqn{eq:test_in_example_labeled_not_referenced} \]
+\end{example}
+
+\begin{proof}
+    This should be equation \thesubsection.3 with a proof mark.
+    \[ f(x) = x^2 \eqn{eq:test_in_proof_labeled_not_referenced} \]
+\end{proof}
+
+\subsection{Referenced Equations}
+
+This should be equation \thesubsection.2.
+\[ f(x) = x^2 \eqn{eq:test_in_subsection_labeled_and_referenced} \]
+Equation \eqref{eq:test_in_subsection_labeled_and_referenced} should reference the equation above.
+
+\begin{example}
+    This should be equation \thesubsection.2.
+    \[ f(x) = x^2 \eqn{eq:test_in_example_labeled_and_referenced} \]
+\end{example}
+Equation \eqref{eq:test_in_example_labeled_and_referenced} should reference the equation above.
+
+\begin{proof}
+    This should be equation \thesubsection.3 with a proof mark.
+    \[ f(x) = x^2 \eqn{eq:test_in_proof_labeled_and_referenced} \]
+\end{proof}
+Equation \eqref{eq:test_in_proof_labeled_and_referenced} should reference the equation above.
