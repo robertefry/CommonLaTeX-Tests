@@ -1,0 +1,21 @@
+
+\documentclass[article]{memoir}
+\input{CommonLaTeX/class_memoir.tex}
+
+\input{CommonLaTeX/common.tex}
+\input{CommonLaTeX/title.tex}
+\input{CommonLaTeX/symbols.tex}
+\input{CommonLaTeX/math.tex}
+\input{CommonLaTeX/theorem.tex}
+\input{CommonLaTeX/graphic.tex}
+
+\equationdisplaymath
+\renewcommand{\thesection}{\arabic{section}}
+
+\input{CommonLaTeX/dummy.tex}
+\begin{document}
+
+    \clearpage\input{tests/test_theorems.tex}
+    \clearpage\input{tests/test_footnotes.tex}
+
+\end{document}
