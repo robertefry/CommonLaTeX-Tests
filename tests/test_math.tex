@@ -1,0 +1,34 @@
+
+\section{Test Math}
+
+\newcommand{\mathtest}[2]{ \hline \texttt{\detokenize{#2}} & $#1$ & $#2$ \\ }
+
+\begin{tabular}{||l|c|c||}
+    \hline
+    \textbf{Verbatim} & \textbf{Expected} & \textbf{Actual} \\
+    \hline
+    \mathtest{f}{\xf{f}}
+    \mathtest{f}{\xf{f}[p]}
+    \mathtest{f}{\xf{f}[p,b]}
+    \mathtest{f}{\xf{f}[p,b,s]}
+    \mathtest{f(x)}{\xf{f}{x}}
+    \mathtest{f(x)}{\xf{f}[p]{x}}
+    \mathtest{f(x)}{\xf{f}[p,b]{x}}
+    \mathtest{f(x)}{\xf{f}[p,b,s]{x}}
+    \mathtest{f(x)y}{\xf{f}{x}{y}}
+    \mathtest{f(x)y}{\xf{f}[p]{x}{y}}
+    \mathtest{f(x)[y]}{\xf{f}[p,b]{x}{y}}
+    \mathtest{f(x)[y]}{\xf{f}[p,b,s]{x}{y}}
+    \mathtest{f(x)yz}{\xf{f}{x}{y}{z}}
+    \mathtest{f(x)yz}{\xf{f}[p]{x}{y}{z}}
+    \mathtest{f(x)[y]z}{\xf{f}[p,b]{x}{y}{z}}
+    \mathtest{f(x)[y]\{z\}}{\xf{f}[p,b,s]{x}{y}{z}}
+    \mathtest{f(x)yzw}{\xf{f}{x}{y}{z}{w}}
+    \mathtest{f(x)yzw}{\xf{f}[p]{x}{y}{z}{w}}
+    \mathtest{f(x)[y]zw}{\xf{f}[p,b]{x}{y}{z}{w}}
+    \mathtest{f(x)[y]\{z\}w}{\xf{f}[p,b,s]{x}{y}{z}{w}}
+    \mathtest{f}{\def\myf{\xf{f}[p]}\myf}
+    \mathtest{f(x)}{\def\myf{\xf{f}[p]}\myf{x}}
+    \mathtest{f(x)y}{\def\myf{\xf{f}[p]}\myf{x}{y}}
+    \hline
+\end{tabular}
